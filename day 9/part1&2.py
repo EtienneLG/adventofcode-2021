@@ -1,4 +1,3 @@
-import numpy
 import numpy as np
 
 grid = np.array([np.array([int(x) for x in str(g)]) for g in open("input.txt").read().split("\n")])
@@ -39,4 +38,4 @@ for i in range(len(grid)):
 
 largest = sorted(basins)[-3:]
 print(sum(low_points))
-print(numpy.multiply.reduce(largest))
+print(np.multiply.reduce(largest))
